@@ -124,7 +124,7 @@ public class HeaderToField<R extends ConnectRecord<R>> extends BaseKeyValueTrans
       });
     }
 
-    input.put("_headers", headers);
+    input.putAll(headers);
     return new SchemaAndValue(null, input);
   }
 
